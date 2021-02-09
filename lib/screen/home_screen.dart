@@ -1,4 +1,5 @@
 import 'package:canes_football_app/design/canes_color.dart';
+import 'package:canes_football_app/widget/canes_appbar_widget.dart';
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -30,8 +31,9 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Material App Bar'),
+      appBar: PreferredSize(
+        preferredSize: MediaQuery.of(context).size * 0.08,
+        child: CanesAppBar(),
       ),
       bottomNavigationBar: ConvexAppBar(
         style: TabStyle.flip,
