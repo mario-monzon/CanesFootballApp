@@ -3,7 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class CanesTextStyle {
-  static final buttonLabel = GoogleFonts.ubuntu(
+  static final buttonLabelM = GoogleFonts.ubuntu(
+      textStyle: TextStyle(
+    color: CanesColor.defaultColor,
+    fontSize: 12.0,
+    fontWeight: FontWeight.bold,
+  ));
+
+  static final buttonLabelL = GoogleFonts.ubuntu(
       textStyle: TextStyle(
     color: CanesColor.defaultColor,
     fontSize: 16.0,
