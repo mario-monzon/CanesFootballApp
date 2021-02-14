@@ -1,5 +1,6 @@
 import 'package:canes_football_app/design/canes_color.dart';
 import 'package:canes_football_app/design/canes_text_style.dart';
+import 'package:canes_football_app/screen/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -30,6 +31,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 children: [
                   TextFormField(
                     controller: _emailController,
+                    textAlign: TextAlign.center,
                     decoration: InputDecoration(
                       prefixIcon: Icon(FontAwesomeIcons.userAlt),
                     ),
@@ -82,7 +84,10 @@ class _LoginScreenState extends State<LoginScreen> {
                       ),
                     ),
                     onPressed: () {
+                      //TODO: https://www.youtube.com/watch?v=gl6wpsgiNfY
                       isLogin ? print('Login') : print('Registro');
+                      if (isLogin)
+                        Navigator.pushNamed(context, HomeScreen.routeName);
                     },
                   ),
                   FlatButton(
