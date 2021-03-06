@@ -1,5 +1,6 @@
 import 'package:canes_football_app/design/canes_color.dart';
 import 'package:canes_football_app/widget/canes_appbar_widget.dart';
+import 'package:canes_football_app/widget/roster/roster_list_widget.dart';
 import 'package:canes_football_app/widget/sponsor/sponsor_list_widget.dart';
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
@@ -23,7 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
   ];
 
   final _pageOption = <Widget>[
-    Center(child: Text('Roster')),
+    Center(child: RosterList()),
     Center(child: Text('Eventos')),
     Center(child: Text('Noticias')),
     SponsorListWidget(),
