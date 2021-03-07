@@ -1,0 +1,6 @@
+{
+  "authenticated": "Authenticated",
+  "initialized": "Initialized",
+  "not_initialized": "Not initialized",
+  "not_authenticated": "Not authenticated"
+}
