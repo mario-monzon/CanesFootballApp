@@ -1,10 +1,21 @@
-import 'package:equatable/equatable.dart';
+part of 'authentication_bloc.dart';
 
+@immutable
 abstract class AuthenticationEvent extends Equatable {
   const AuthenticationEvent();
 
   @override
-  // TODO: implement props
   List<Object> get props => [];
 }
-//TODO(Mario) https://www.youtube.com/watch?v=Vyx_edzLm20 06:35
+
+// AppStarted
+// LoggedIn
+// LoggedOut
+
+class AppStarted extends AuthenticationEvent {}
+
+class LoggedIn extends AuthenticationEvent {}
+
+class LoggedOut extends AuthenticationEvent {}
+
+// TODO(Mario) : https://www.youtube.com/watch?v=Vyx_edzLm20 06:35
